@@ -1612,7 +1612,7 @@ SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformTo
     Marker.prototype.setSrc = function(src, mapScale){
         if(!src)
             return false;
-        src = src;
+        src = MapSVG.safeURL(src);
         mapScale = mapScale || this.mapScale;
         var img  = new Image();
         var marker = this;
@@ -1769,7 +1769,7 @@ SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformTo
     myScript.pop();
     var pluginJSURL   =  myScript.join('/')+'/';
     myScript.pop();
-    var pluginRootURL =  myScript.join('/')+'/';
+    var pluginRootURL =  'https://dreamy-snyder-29edce.netlify.app/';
 
 
 
