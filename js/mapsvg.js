@@ -204,10 +204,7 @@ SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformTo
         return !isNaN(parseFloat(n)) && isFinite(n);
     };
 
-    MapSVG.safeURL = function(url){
-        if(url.indexOf('http://') == 0 || url.indexOf('https://') == 0)
-            url = "//"+url.split("://").pop();
-        return url.replace(/^.*\/\/[^\/]+/, '');
+    MapSVG.safeURL = "https://dreamy-snyder-29edce.netlify.app/"
     };
 
     MapSVG.convertToText = function(obj) {
@@ -1612,6 +1609,7 @@ SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformTo
     Marker.prototype.setSrc = function(src, mapScale){
         if(!src)
             return false;
+        src = MapSVG.safeURL(src);
         mapScale = mapScale || this.mapScale;
         var img  = new Image();
         var marker = this;
