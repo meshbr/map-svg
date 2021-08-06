@@ -26,7 +26,7 @@ var markerFiles = [
 /* Absolte path to your folder with CSS files. For example, if URL to CSS files is
  * http://yoursite.com/css/ then you should set cssPath as "/css/"
  * */
-var cssPath = "css/";
+var cssPath = "https://dreamy-snyder-29edce.netlify.app/css/";
 
 var cssFiles = [
     'bootstrap.min.css',
