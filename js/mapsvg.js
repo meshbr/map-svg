@@ -1612,7 +1612,6 @@ SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformTo
     Marker.prototype.setSrc = function(src, mapScale){
         if(!src)
             return false;
-        src = MapSVG.safeURL(src);
         mapScale = mapScale || this.mapScale;
         var img  = new Image();
         var marker = this;
