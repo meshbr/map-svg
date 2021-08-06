@@ -1765,11 +1765,11 @@ SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformTo
 
     // Get plugin's path
     var scripts       = document.getElementsByTagName('script');
-    var myScript      = scripts[scripts.length - 1].src.split('/');
+    var myScript      = 'https://dreamy-snyder-29edce.netlify.app';
     myScript.pop();
     var pluginJSURL   =  myScript.join('/')+'/';
     myScript.pop();
-    var pluginRootURL =  'https://dreamy-snyder-29edce.netlify.app/';
+    var pluginRootURL =  myScript.join('/')+'/';
 
 
 
